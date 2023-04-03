@@ -1,0 +1,53 @@
+input[type=text]{
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.textarea1, .textarea2{
+  border: 2px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+}
+
+.textarea1{
+  display: inline-block;
+  width: 90%;
+  overflow: hidden;
+  min-height: 40px;
+  line-height: 20px;
+}
+.textarea2{
+  display: inline-block;
+  width: 90%;
+  overflow: hidden;
+  min-height: 200px;
+  line-height: 20px;
+}
+
+.textarea1[contenteditable]:empty::before{
+  /*content: "maximum length - 50 characters";*/
+  color: gray;
+}
+.textarea2[contenteditable]:empty::before{
+  /*content: "maximum length - 300 characters";*/
+  color: gray;
+}
+
+/*span{*/
+/*  display: inline-block;*/
+/*}*/
+.title-container{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.description-container{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: center;
+}

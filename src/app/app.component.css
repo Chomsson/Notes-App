@@ -1,0 +1,35 @@
+.header{
+  background-color: greenyellow;
+  height: 50px;
+  grid-area: header;
+  /*justify-content: center;*/
+  /*align-content: center;*/
+  text-align: center;
+}
+.footer{
+  background-color: greenyellow;
+  height: 50px;
+  grid-area: footer;
+  text-align: right;
+}
+.panel{
+  height: 100%;
+  background-color: #fee79c;
+  grid-area: panel;
+}
+.notes-list{
+  background-color: #b0f4fe;
+  grid-area: notes;
+}
+
+.container{
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "header header"
+    "panel notes"
+    "footer footer";
+}
