@@ -1,1 +1,8 @@
-<p>notes works!</p>
+<div class="notes-container">
+  <div class="card"
+  *ngFor="let note of notes">
+    <div class="card-header"> {{ note.name}}
+    </div>
+    <div class="card-text"> {{note.description}}</div>
+  </div>
+</div>

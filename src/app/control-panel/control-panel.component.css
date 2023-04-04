@@ -50,4 +50,5 @@ input[type=text]{
 .buttons-container{
   display: flex;
   justify-content: center;
+  column-gap: 5px;
 }

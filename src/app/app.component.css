@@ -20,6 +20,14 @@
 .notes-list{
   background-color: #b0f4fe;
   grid-area: notes;
+  /*display: grid;*/
+  /*grid-template-columns: repeat(4, minmax(0, 1fr));*/
+  /*grid-auto-columns: minmax(0, 1fr);*/
+  /*grid-auto-flow: column;*/
+  /*column-gap: 10px;*/
+  /*row-gap: 10px;*/
+  /*padding: 5px;*/
+
 }
 
 .container{
@@ -33,3 +41,14 @@
     "panel notes"
     "footer footer";
 }
+
+/*.notes-container{*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(4, minmax(0, 1fr));*/
+/*  grid-template-rows: auto;*/
+/*  !*grid-auto-columns: minmax(0, 1fr);*!*/
+/*  !*grid-auto-flow: column;*!*/
+/*  column-gap: 10px;*/
+/*  row-gap: 10px;*/
+/*  padding: 5px;*/
+/*}*/

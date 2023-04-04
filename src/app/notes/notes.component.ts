@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Note} from "../note.model";
+import {ControlPanelComponent} from "../control-panel/control-panel.component";
+
+
 
 @Component({
   selector: 'app-notes',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotesComponent implements OnInit {
 
-  constructor() { }
+  @Input() note!: Note;
+  @Input() notes!: Note[];
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
+
+
+
 
 }

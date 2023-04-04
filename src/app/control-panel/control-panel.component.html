@@ -1,13 +1,14 @@
 <div class="title-container">
   <label>Note title</label>
 <!--  <span class="textarea1" role="textbox" contenteditable></span>-->
-  <textarea  maxlength="50" class="textarea1"></textarea>
+  <textarea maxlength="50" class="textarea1" #noteName></textarea>
 </div>
 <div class="description-container">
   <label>Note Description</label>
 <!--  <span class="textarea2" role="textbox" contenteditable></span>-->
-  <textarea maxlength="300" class="textarea2"></textarea>
+  <textarea maxlength="300" class="textarea2" #noteDescription></textarea>
 </div>
 <div class="buttons-container">
-  <button class="btn btn-success" (click)="onAddNoteClick()">Add Note</button>
+  <button class="btn btn-success" (click)="onAddNoteClick(noteName, noteDescription)">Add Note</button>
+  <button class="btn btn-danger" (click)="onDeleteClick()">Delete 1st note</button>
 </div>

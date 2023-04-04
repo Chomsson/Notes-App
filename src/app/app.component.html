@@ -3,11 +3,19 @@
     <h1>Notes App</h1>
   </div>
   <div class="panel">
-    <app-control-panel></app-control-panel>
+    <app-control-panel
+      (noteCreated)="onNoteCreated($event)"
+      (deleteNote)="onNoteDeleted()"
+    ></app-control-panel>
   </div>
   <br>
   <div class="notes-list">
-    <app-notes></app-notes>
+    <app-notes
+    [notes]="listOfNotes"
+    >
+<!--      *ngFor="let noteElement of notes"-->
+<!--      [note]="noteElement"-->
+    </app-notes>
   </div>
   <div class="footer">
     <p style="font-size: 12px; font-style: italic;">
